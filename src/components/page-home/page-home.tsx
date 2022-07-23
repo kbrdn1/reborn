@@ -11,7 +11,7 @@ export class PageHome {
   render() {
     return (
       <Host>
-        <h1>HOME</h1>
+        <button onClick={() => this.history.push('/404')}>Go to 404</button>
       </Host>
     );
   }
