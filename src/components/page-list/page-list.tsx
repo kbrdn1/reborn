@@ -15,20 +15,20 @@ export class PageList {
     { img: 'https://fakeimg.pl/30x30/000%2C128/', value: 200, title: 'Last item from the lsit', description: 'The Answer' },
   ];
 
-  render() {
-    return (
+  // affichage des items dans la page list en fonction de la valeur de la variable items (dans le html)
+  render() { 
+    return ( 
       <Host>
-        <ul>
-          { this.items.map((item: any) =>
-            <li>
-              <img src="https://fakeimg.pl/30/"></img>
-              <h4>Title</h4>
-              <p>Description for first item</p>
-            </li>
-          )}
-        </ul>
+          { this.items.map(item => ( 
+          <ul> 
+            <li> 
+              <img src={item.img}></img>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </li> 
+          </ul> 
+          ))}
       </Host>
     );
   }
-
 }
