@@ -1,0 +1,15 @@
+nav {
+    // background-color: var(--nav-color);
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        list-style: none;
+        margin: 1%;
+    }
+    a{
+        text-decoration: none;
+        color: $app-color-white;
+    }
+}

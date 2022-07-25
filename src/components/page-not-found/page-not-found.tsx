@@ -1,5 +1,4 @@
 import { Component, Host, getAssetPath, h } from '@stencil/core';
-
 @Component({
   tag: 'page-not-found',
   styleUrl: 'page-not-found.scss',

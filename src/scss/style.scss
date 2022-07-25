@@ -1,0 +1,68 @@
+// ******************* 1. Ne pas structurer ********************
+// _ pour dire que c'est un module et qu'il ne faut pas le compiler
+
+// sass/
+//      --_mixins.scss
+//      --_variables.scss
+//      --_placeholders.scss
+//      --_style.scss
+
+@import "_mixins";
+@import "_placeholders";
+@import "_variables";
+
+
+$alyssia: sans-serif;
+
+/************ Bien utiliser les variables ***********/
+
+:root{
+    // --primary-color: rgb(243, 180, 169);
+    // --nav-color: tomato;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: $alyssia;
+    // background-color: var(--primary-color);
+}
+
+body {
+    height: 100vh;
+    @extend %flex-center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: $app-color-primary;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: $app-color-primary;
+    //@include absolute-el(50%,0,0,50%,-50%,-50%);
+}
+
+/************ Nesting ***********/
+
+nav {
+    // background-color: var(--nav-color);
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        list-style: none;
+        margin: 1%;
+    }
+    a{
+        text-decoration: none;
+        color: $app-color-white;
+    }
+}

@@ -113,7 +113,7 @@ body {
 .rightarm404 {
     position: absolute;
     top: 148px;
-    left: 231px;
+    left: 220px;
     width: 157px;
     height: 91px;
     background-position: -442px -323px;
@@ -123,7 +123,7 @@ body {
 
 .chair404 {
     position: absolute;
-    top: 430px;
+    top: 420px;
     left: 55px;
     width: 260px;
     height: 365px;
@@ -132,16 +132,17 @@ body {
 
 .legs404 {
     position: absolute;
-    top: 378px;
-    left: 4px;
+    top: 360px;
+    left: -7px;
     width: 370px;
-    height: 247px;
+    height: 270px;
     background-position: -381px -443px;
 }
 
 .leftshoe404 {
+    z-index: 1;
     position: absolute;
-    top: 591px;
+    top: 610px;
     left: 54px;
     width: 130px;
     height: 92px;
@@ -149,8 +150,9 @@ body {
 }
 
 .rightshoe404 {
+    z-index: 1;
     position: absolute;
-    top: 594px;
+    top: 610px;
     left: 187px;
     width: 135px;
     height: 81px;
@@ -161,7 +163,7 @@ body {
 
 .laptop404 {
     position: absolute;
-    top: 186px;
+    top: 210px;
     left: 9px;
     width: 365px;
     height: 216px;
